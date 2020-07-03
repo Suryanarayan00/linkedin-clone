@@ -5,11 +5,6 @@
     width: 100%;
     
 }
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .search{
     width: 30
@@ -36,7 +31,7 @@
 #navbar{
     display: flex;
     overflow: hidden;
-    top: 0;
+    margin: 0;
     background-color: aliceblue;
     position: fixed;
     width: 98%;
@@ -92,10 +87,71 @@ li{
 }
 
 .space{
-    padding-top: 5vw;
+    padding-top: 10vw;
 }
 
-/* Use a media query to add a break point at 800px: */
+
+
+/*body*/
+.column3{
+    width: 25%;
+    float: left;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column4{
+    width: 50%;
+    float: left;
+
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.boxhead{
+    background-color: aliceblue;
+    border-style: outset;
+}
+
+.boxbody{
+ background-color: aliceblue; 
+border-style: outset;
+}
+
+.boxfoot{
+    display: flex;
+    float: left;
+    background-color: aliceblue;
+    width: 100%;
+    border-style: outset;
+}
+
+.responsivetext{
+    padding: 0;
+    margin: 0;
+/*    font-size: 3vw;*/
+    align-items: center;
+/*    text-shadow: 1.5vw 2vw 4vw #000;*/
+    padding-right: 5vw;
+}
+
+i{
+        font-size: 3vw;
+        color: lightgreen;
+        align-items: center;
+/*        text-shadow: 1.5vw 2vw 4vw #000;*/
+/*        border: outset #fff;*/
+    }
+
+.small{
+    font-size: 3vw;
+}
+/* Use a media query to add a break point at 600px: */
 @media screen and (max-width:600px) {
     .hidden{
         visibility: visible;
@@ -117,25 +173,7 @@ li{
         text-shadow: 1.5vw 2vw 4vw #000;
     }
     .space{
-        padding-top: 10vw;
+        padding-top: 15vw;
     }
 }
 
-/*body*/
-.column3{
-    width: 28%;
-    display: flex;
-    padding: 1px;
-    float: left;
-    background-color: #aaa;
-    height: 200px;
-}
-
-.column4{
-    width: 37%;
-    display: flex;
-    padding: 1px;
-    float: left;
-    background-color: #bbb;
-    height: 200px;
-}
