@@ -1,0 +1,141 @@
+
+
+.row{
+    padding-top: 8px;
+    width: 100%;
+    
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.search{
+    width: 30
+}
+
+.image{
+    display: flex;
+}
+
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+}
+
+.img-box {
+    background: #fff;
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #d1d1d1;
+    font-size: 1.3rem;
+}
+
+/*navbar*/
+#navbar{
+    display: flex;
+    overflow: hidden;
+    top: 0;
+    background-color: aliceblue;
+    position: fixed;
+    width: 98%;
+    padding: 0;
+}
+
+#navbar ul{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    list-style: none;
+    padding: 1vw;
+    border-style: outset;
+}
+
+li{
+    display: flex;
+    padding-right: 5vw;
+    float: right;
+    width: 10%;
+    font-family: cursive;
+    font-size: 2vw;
+    color: lightgreen;
+    align-items: center;
+    text-shadow: 2vw 2vw 4vw #000;
+}
+
+.hidden{
+    visibility: hidden;
+    float: none;
+    width: 0;
+    padding: 0;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  color: #fff;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.space{
+    padding-top: 5vw;
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:600px) {
+    .hidden{
+        visibility: visible;
+        width: 10%;
+        padding: 1vw;
+        display: flex;
+        float: right;
+        align-items: center;
+    }
+    li{
+        visibility: hidden;
+        display: none;
+        padding-right: 0;
+    }
+    i{
+        font-size: 5vw;
+        color: lightgreen;
+        align-items: center;
+        text-shadow: 1.5vw 2vw 4vw #000;
+    }
+    .space{
+        padding-top: 10vw;
+    }
+}
+
+/*body*/
+.column3{
+    width: 28%;
+    display: flex;
+    padding: 1px;
+    float: left;
+    background-color: #aaa;
+    height: 200px;
+}
+
+.column4{
+    width: 37%;
+    display: flex;
+    padding: 1px;
+    float: left;
+    background-color: #bbb;
+    height: 200px;
+}
