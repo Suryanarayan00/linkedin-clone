@@ -1,0 +1,260 @@
+.row{
+    padding-top: 8px;
+    width: 100%;
+    
+}
+
+.search{
+    width: 30%;
+}
+
+/*navbar styling*/
+#pcview, #mobileview, #bottomnavbar{
+    display: flex;
+    overflow: hidden;
+    margin: 0;
+    background-color: aliceblue;
+    position: fixed;
+    width: 98%;
+    padding: 0;
+}
+
+#pcview ul, #mobileview ul, #bottomnavbar ul{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    list-style: none;
+    padding: 1vw;
+    border-style: outset;
+}
+
+#pcview ul li, #mobileview ul li, #bottomnavbar ul li{
+    display: flex;
+    float: left;
+    padding-left: 3vw;
+    text-align: left;
+    font-size: 2vw;
+    font-family: cursive;
+    color: green;
+    align-items: center;
+    text-shadow: 2vw 2vw 4vw #000;
+    
+}
+
+.space{
+    padding-top: 6vw;
+}
+
+
+
+
+
+/*style for main body part*/
+
+
+
+.column3{
+    width: 29%;
+    float: left;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column4, .main{
+    width: 42%;
+    float: left;
+
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.boxhead{
+    padding: 1vw;
+    padding-left: 1vw;
+    background-color: aliceblue;
+    border-style: inset;
+    border-bottom: none;
+}
+
+.boxbody{
+    align-items: center;
+    justify-items: center;
+    float: center;
+    padding: 1vw;
+    background-color: aliceblue; 
+    border-bottom: none;
+    
+}
+
+.boxfoot{
+    padding-bottom: 1vw;
+    display: flex;
+    background-color: aliceblue;
+    width: 99%;
+    padding-left: 1vw;
+    
+}
+.boxfoot i{
+    font-size: 2.2vw;
+    padding-right: 5vw;
+    text-align: left;
+    
+}
+
+
+.profile{
+    padding: 2vw;
+    position: relative;
+    border-radius: 2rem;
+    border-bottom: outset;
+}
+
+
+    /*responsive image section*/
+    .image{
+    display: flex;
+    }
+
+    .img-responsive{
+        width: 100%;
+        height: auto;
+    }
+
+    .img-box {
+        background: #fff;
+        flex: 1;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px #d1d1d1;
+        font-size: 1.3rem;
+    }
+
+    /*    responsive text*/
+    .responsivetext{
+        padding: 0;
+        margin: 0;
+        font-size: 1.3vw;
+        align-items: center;
+        padding-right: 5vw;
+    }
+
+
+
+
+/*hide mobile view at laptop pixel....*/
+
+#mobileview, #bottomnavbar{
+    visibility: hidden;
+    display: none;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Use of media query to add a break point at 600px: for mobile view */
+@media screen and (max-width:700px) {
+    
+/*    hide things first*/
+    .profile{
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+    #pcview{
+        visibility: hidden;
+        display: none;
+        
+    }
+    .profile{
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+    
+    
+    
+   
+/*   show things */
+/*navbar*/
+    #mobileview, #bottomnavbar{
+        visibility: visible;
+        display: flex;
+    }
+    
+    
+/*    tooltip for icon in mobile view*/
+   .tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      color: black;
+      position: absolute;
+/*      bottom: 100%;*/
+      left: 50%;
+      margin-left: -60px;
+      transition: opacity 0.3s;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+  
+    
+/*    search bar*/
+    .search{
+    width: 60%;
+}
+    
+/*    bottom navbar*/
+    #bottomnavbar{
+        bottom: 0;
+    }
+    
+/*    icon shaping*/
+    #mobileview ul li, #bottomnavbar ul li{
+    width: 20%;
+    padding-left: 5vw;
+    font-size: 5vw;
+    
+}
+    
+    
+    
+    
+    
+    .space{
+        padding-top: 10vw;
+    }
+    
+    .main{
+        width: 100%;
+        padding-bottom: 10vw
+    }
+    .responsivetext{
+        font-size: 3vw;
+    }
+    .boxfoot i{
+    font-size: 3.2vw;
+    
+    
+}
+}
