@@ -7,7 +7,7 @@
 }
 
 .search{
-    width: 30
+    width: 30%;
 }
 
 .image{
@@ -39,6 +39,7 @@
 }
 
 #navbar ul{
+    margin: 0;
     width: 100%;
     display: flex;
     align-content: center;
@@ -87,7 +88,7 @@ li{
 }
 
 .space{
-    padding-top: 10vw;
+    padding-top: 6vw;
 }
 
 
@@ -102,7 +103,7 @@ li{
   display: table;
   clear: both;
 }
-.column4{
+.column4, .main{
     width: 50%;
     float: left;
 
@@ -131,6 +132,15 @@ border-style: outset;
     border-style: outset;
 }
 
+.profile{
+    padding: 2vw;
+/*    background-color: dimgray;*/
+    position: relative;
+    border-radius: 2rem;
+/*    border-style: inset;*/
+    border-bottom: outset;
+}
+
 .responsivetext{
     padding: 0;
     margin: 0;
@@ -148,11 +158,18 @@ i{
 /*        border: outset #fff;*/
     }
 
-.small{
-    font-size: 3vw;
-}
 /* Use a media query to add a break point at 600px: */
 @media screen and (max-width:600px) {
+    .profile{
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+    .main{
+        width: 100%;
+        margin: 0;
+    }
     .hidden{
         visibility: visible;
         width: 10%;
@@ -173,7 +190,7 @@ i{
         text-shadow: 1.5vw 2vw 4vw #000;
     }
     .space{
-        padding-top: 15vw;
+        padding-top: 10vw;
     }
 }
 
